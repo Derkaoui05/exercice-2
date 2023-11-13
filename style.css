@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Montserrat:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    font-family: 'Rubik',sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    transition: 2s linear;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+   
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #6f6868e4;
+    border-radius: 10px;
+
+}
+
+:root{
+    --main-color:#a9a9a93c;
+    --bg: #121210;
+    --btn-clr: #008004;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 200px;
+    transition: 2s linear;
+
+}
+
+.navbar{
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.navbar-left{
+    display: flex;
+    gap: 30px;
+    font-size: 1.2rem;
+
+}
+
+.navbar-link{
+    color: #a9a9a9b1;
+}
+
+.navbar-link:hover{
+    border-bottom: .1rem solid #a9a9a9b1;
+    padding-bottom: .2rem;
+}
+
+.navbar-right{
+    color: #a9a9a9b1;
+    display: flex;
+    gap: 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.content{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--bg);
+    min-height: 100vh;
+    position: relative;
+}
+
+.about-content{
+    width: 35%;
+    color: aliceblue;
+    margin-left: 6%;
+}
+
+.about-content h2{
+    text-transform: uppercase;
+    font-size: 2.9rem;
+}
+
+.about-content p{
+    font-size: 1.7rem;
+    margin: 20px 0;
+    color: #a9a9a9b1;
+}
+
+.about-content a{
+    background: var(--btn-clr);
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 9px;
+    margin-left: 2%;
+    box-shadow :var(--btn-clr) 0px 5px 15px;
+}
+
+.work{
+    position: absolute;
+    bottom: 9%;
+    left: 20%;
+    transform: translateX(-20%);
+   
+}
+
+.work h4{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.work img{
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    transition: .10s;
+    object-fit: cover;
+    border: #a9a9a93e 1px solid;
+    margin-left: 30px;
+    padding: 16px;
+}
+
+.work img:hover{
+    transform: scale(1.1);
+}
+
+.study{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.title{
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 20PX;
+}
+
+.sub-title{
+    max-width: 650px;
+    font-size: 1.4rem;
+}
+
+.cards-content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, auto));
+    align-items: center;
+    cursor: pointer;
+    margin: 0 200px;
+}
+
+.cards-box{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+
+.card-speciality{
+    background: burlywood;
+    color: rgba(246, 141, 3, 0.86);
+    padding: 7px 10px;
+    border-radius: 9px;
+    width: 80px;
+}
+
+.cards-box h3{
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    margin-block: 10px;
+}
+
+.cards-box p{
+    max-width: 400px;
+    text-align: justify;
+    margin-block: 10px;
+}
+
+.cards-box img{
+    height: 300px;
+    width: 450px;
+}
+.card-btn{
+    width: 220px;
+    color: #fff;
+    background: orange;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card-btn:hover{
+    transform: scale(1.1);
+}
+
+#cart-btn1{
+    color: #fff;
+    background: #0000ff;
+}
+#cart-btn2{
+    color: #fff;
+    background: #00ff99;
+}
+
+#card1{
+    background: #5672d9;
+    color: rgb(0, 0, 254);
+}
+
+#card2{
+    background: #6ddcaa62;
+    color: #68daac;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+}  
